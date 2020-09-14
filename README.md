@@ -5,6 +5,8 @@ FIRMWARE:
 
 This is a port of the 3.17 CD-R Dimm firmware patched originally done by ElSemi to the version 4.02 which patches the media checks to pass on CD-R using the GD-ROM drive on NAOMI.
 
+This firmware does everything the 4.02 firmware does (CF loading with the ability to use use Compact Flash cards from other vendors than HAGIWARA SYS-COM, ability to run on non regular (non-net) DIMM Boards) and adds CD-R support to it.
+
 The TSOP_flash folder contains a TSOP image to be flashed directly with a programmer, the UPDATER folder contains the update to run on an existing dimm board (assuming you have some way of running custom code such as CF loading or netbooting).
 
 As it stands, you will need to use the supplied naoiso tool (in this repository), the image is written at 0x57E4000 (LBA 45000) in the image, you may opt to use an original or a zero key PIC. 
