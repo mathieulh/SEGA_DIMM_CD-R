@@ -30,7 +30,7 @@ So far so good, at least that's the theory, the issue when dealing with leaked s
 
 This aside another issue was later identified in which the DIMM firmware would perform a LBA check for the location of NAOMIGD.BIN, which would not match the location on an original GD-ROM media when burned to a CD-R, this would cause the Naomi to reboot with an ERROR25, fortunately MetalliC supplied us with the tidbit that a specifc flag in the info file allows to skip that check entirely (and saved me from further investigating the DIMM firmware).
 
-As such I took it upon myself to to craft a new version of the NaoIso application which fixes the bug, and thus allow to generate a decrypted iso for 00 key PICs, as well as to automatically add the flag to the generated iso.
+As such I took it upon myself to to craft a new version of the NaoIso application which fixes the bug, and thus allow to generate a decrypted iso for 00 key PICs, as well as  automatically adds the flag to the generated iso.
 
 HOW TO USE: 
 This tool converts an extracted track03.iso from a GD-ROM dump (or an extracted CHD) into a burnable iso, this means, dump your GD-ROM, or extract your CHD, convert track03 from binary data to iso, (use a tool such as bin2iso to do this.)
