@@ -9,7 +9,7 @@ This firmware does everything the 4.02 firmware does (CF loading with the abilit
 
 The TSOP_flash folder contains a TSOP image to be flashed directly with a programmer, the UPDATER folder contains the update to run on an existing dimm board (assuming you have some way of running custom code such as CF loading or netbooting).
 
-As it stands, you will need to use the supplied naoiso tool (in this repository), the image is written at 0x57E4000 (LBA 45000) in the image, you may opt to use an original or a zero key PIC. 
+As it stands, you will need to use the supplied naoiso tool (in this repository), the image is written at 0x57E4000 (LBA 45000) in the iso file, you may opt to use an original or a zero key PIC. 
 
 I could have patched the LBA limitation but that would have broken GD-ROM compatibility and there are no NAOMI games that use over 512MB anyway for us to need the extra CD-R space.
 
